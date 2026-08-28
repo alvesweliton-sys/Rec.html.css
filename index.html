@@ -4,100 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empatia e Compreensão</title>
-    <style>
-        /* Estilos Globais */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f4f8f6;
-            color: #2c3e50;
-            line-height: 1.6;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-
-        /* Container Principal */
-        .container {
-            max-width: 700px;
-            background: #ffffff;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-            margin-top: 40px;
-            text-align: center;
-        }
-
-        /* Cabeçalho e Textos */
-        h1 {
-            color: #2e7d32;
-            font-size: 2.2rem;
-            margin-bottom: 15px;
-        }
-
-        p {
-            font-size: 1.1rem;
-            color: #555555;
-            margin-bottom: 20px;
-            text-align: justify;
-        }
-
-        /* Destaque para Citação */
-        blockquote {
-            background-color: #e8f5e9;
-            border-left: 4px solid #2e7d32;
-            padding: 15px 20px;
-            margin: 25px 0;
-            font-style: italic;
-            color: #1b5e20;
-            border-radius: 0 8px 8px 0;
-            text-align: left;
-        }
-
-        /* Seção do Botão de Curtida */
-        .like-section {
-            margin-top: 30px;
-            padding-top: 20px;
-            border-top: 1px solid #eeeeee;
-        }
-
-        .like-btn {
-            background-color: #2e7d32;
-            color: white;
-            border: none;
-            padding: 12px 24px;
-            font-size: 1rem;
-            font-weight: bold;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.1s ease;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .like-btn:hover {
-            background-color: #1b5e20;
-        }
-
-        .like-btn:active {
-            transform: scale(0.96);
-        }
-
-        .like-count {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 2px 8px;
-            border-radius: 12px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -121,17 +30,32 @@
             </button>
         </div>
     </div>
+    
 
-    <script>
-        let likes = 0;
-        const btnLike = document.getElementById('btnLike');
-        const contador = document.getElementById('contador');
+     <div class="container">
+        <h1>Empatia & Compreensão</h1>
+        
+        <p>
+            A empatia é a capacidade de se colocar no lugar do outro, buscando compreender seus sentimentos, perspectivas e experiências sem julgamentos precipitados. É a ponte que conecta pessoas e constrói relacionamentos mais saudáveis e humanos.
+        </p>
 
-        btnLike.addEventListener('click', () => {
-            likes++;
-            contador.textContent = likes;
-        });
-    </script>
+        <blockquote>
+            "Compreender o outro é o primeiro passo para criar um mundo com mais respeito e gentileza."
+        </blockquote>
+
+        <p>
+            Praticar a escuta ativa, ter paciência com o tempo do próximo e cultivar a gentileza são pequenos atos diários que transformam nosso convívio em sociedade.
+        </p>
+
+        <div class="like-section">
+            <button class="like-btn" id="btnLike">
+                ❤️ Curtir <span class="like-count" id="contador">0</span>
+            </button>
+        </div>
+    </div>
+
+
+    <script src="s"></script>
 
 </body>
 </html>
